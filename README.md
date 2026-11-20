@@ -13,11 +13,14 @@
   <a href="https://github.com/Reeneka/Stella-Sora-Mod-Manager/releases/latest"><b>Download the latest release</b></a>
 </p>
 
+<h1 align="center">If there's hotfix or version update, REMEMBER to click the revert button before updating or else you will need to do Check Game Integrity(Steam)/Check Game Files(Yostar's Launcher) just to update the game.</h1>
+
 ## Use the exe
 
 1. Download `StellaSoraModManager.exe` from the Releases page.
 2. Put it in its own folder and run it.
-3. On first start, pick your Stella Sora game folder (the one that contains `StellaSora.exe`). Both the Steam version and the official launcher version work. You can change it later with the Browse button.
+3. Set your Stella Sora game folder in the app (use the Browse button).<br>
+   Set it as the whole Stella Sora folder, example would be "D:\SteamLibrary\steamapps\common\Stella Sora" as this exe will scan through both StellaSora_Data and Persistent_Store to replace the files with your mods.
 
 The app creates these next to the exe:
 
