@@ -39,15 +39,6 @@ python ssmod_gui.py
 
 When run from source, `Mods\`, `Backup\` and `config.json` are created in the repo folder.
 
-## Build the exe
-
-```
-pip install pyinstaller
-pyinstaller StellaSoraModManager.spec
-```
-
-The exe is written to `dist\StellaSoraModManager.exe`.
-
 ## Character names
 
 The Name column comes from `names.txt`, which maps the number in a mod's file name to a character or NPC name (for example `char_l2d_14301` → Wraith). The app reads it offline.
