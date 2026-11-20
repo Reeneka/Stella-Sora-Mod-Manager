@@ -28,16 +28,9 @@ The app creates these next to the exe:
 - `Backup\` -> original game files and replaced mod versions
 - `config.json` -> your settings
 
-## Run from source
+Only Supports L2D and 2D(sprites) files for now. If there's a breakthrough in modding, i could probably update it to include chibi models but right now it's unlikely.
 
 Requires Python 3.13 on Windows.
-
-```
-pip install -r requirements.txt
-python ssmod_gui.py
-```
-
-When run from source, `Mods\`, `Backup\` and `config.json` are created in the repo folder.
 
 ## Character names
 
