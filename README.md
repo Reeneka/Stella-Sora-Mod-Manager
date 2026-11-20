@@ -1,8 +1,17 @@
-<img src="icon.png" width="96" align="right" alt="">
+<p align="center">
+  <img src="icon.png" width="128" alt="">
+</p>
 
-# Stella Sora Mod Manager
+<h1 align="center">Stella Sora Mod Manager</h1>
 
-A Windows desktop app for installing, updating and removing Stella Sora mods. It backs up the original game files before replacing them, so you can restore them later.
+<p align="center">
+  A Windows desktop app for installing, updating and removing Stella Sora mods.<br>
+  It backs up the original game files before replacing them, so you can restore them later.
+</p>
+
+<p align="center">
+  <a href="https://github.com/Reeneka/Stella-Sora-Mod-Manager/releases/latest"><b>Download the latest release</b></a>
+</p>
 
 ## Use the exe
 
