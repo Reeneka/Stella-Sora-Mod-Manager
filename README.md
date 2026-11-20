@@ -21,9 +21,9 @@
 
 The app creates these next to the exe:
 
-- `Mods\` — put your mod files here
-- `Backup\` — original game files and replaced mod versions
-- `config.json` — your settings
+- `Mods\` -> put your mod files here
+- `Backup\` -> original game files and replaced mod versions
+- `config.json` -> your settings
 
 ## Run from source
 
@@ -44,8 +44,6 @@ pyinstaller StellaSoraModManager.spec
 ```
 
 The exe is written to `dist\StellaSoraModManager.exe`.
-
-To regenerate `icon.ico` and `icon.png`, run `python make_icon.py` (needs `pip install pillow`).
 
 ## Character names
 
