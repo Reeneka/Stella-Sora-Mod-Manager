@@ -1,0 +1,14 @@
+# Runtime data (game files / personal settings)
+Mods/
+Backup/
+config.json
+
+# Build output
+build/
+dist/
+*.exe
+__pycache__/
+*.pyc
+*.bak
+.instance.lock
+*.ssmm_tmp

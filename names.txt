@@ -1,0 +1,275 @@
+# Stella Sora ID -> name lookup used for the Name column.
+# Format: <id><TAB><name>. Ids are the number in a mod file name, e.g. char_l2d_14301 -> 14301.
+# Built from EN data at https://github.com/Hiro420/StellaSoraData . Edit or add lines freely.
+
+3	Portia
+5	Beatrixa
+9	Portia
+103	Amber
+107	Tilia
+108	Kasimira
+110	Firenze
+111	Iris
+112	Noya
+113	Shimiao
+114	Chaton
+115	Firefly
+116	Ridge
+117	Jinglin
+118	Coronis
+119	Nanoha
+120	Canace
+123	Ann
+125	Freesia
+126	Flora
+127	Teresa
+130	Donna
+132	Minova
+133	Nazuka
+134	Fuyuka
+135	Mistique
+137	Eleanor
+139	Allie
+140	Sparkla
+141	Chixia
+142	Cosette
+143	Wraith
+144	Chitose
+145	Otoha
+147	Caramel
+149	Gerie
+150	Laru
+155	Shia
+156	Nazuna
+157	Karin
+158	Snowish Laru
+159	Springseek Coronis
+160	Suntide Willow
+161	Leafia
+162	Firstlight Noya
+997	Spellbound Golem (Left Hand)
+998	Spellbound Golem (Right Hand)
+999	Spellbound Golem
+7103	Amber
+7110	Firenze
+7111	Iris
+7112	Noya
+7113	Shimiao
+7117	Jinglin
+7125	Freesia
+7133	Nazuka
+7134	Fuyuka
+7135	Mistique
+7139	Allie
+7141	Chixia
+7144	Chitose
+7145	Otoha
+7156	Nazuna
+7158	Snowish Laru
+7159	Springseek Coronis
+7160	Suntide Willow
+7162	Firstlight Noya
+8110	Firenze
+8114	Chaton
+8115	Firefly
+8130	Donna
+8133	Nazuka
+8134	Fuyuka
+8137	Eleanor
+8139	Allie
+8140	Sparkla
+8143	Wraith
+8145	Otoha
+8157	Karin
+8158	Snowish Laru
+8159	Springseek Coronis
+8160	Suntide Willow
+8161	Leafia
+8162	Firstlight Noya
+9102	Willow
+9131	Bloc
+9133	Portia
+9155	Shia
+9159	Horizon
+9172	Beatrixa
+9173	Bernina
+9174	Virigia
+10301	Amber
+10302	Amber (Awakened)
+10303	Amber (Playful Innocence)
+10304	Amber (Ease Into an Unhurried Summer)
+10701	Tilia
+10702	Tilia (Awakened)
+10703	Tilia (This Is My Justice!)
+10704	Tilia (Shining Bright, Spirits High)
+10801	Kasimira
+10802	Kasimira (Awakened)
+11001	Firenze
+11002	Firenze (Awakened)
+11003	Firenze (Deadly Beauty, Unparalleled Allure)
+11101	Iris
+11102	Iris (Awakened)
+11103	Iris (The 1/365th of You)
+11104	Iris (Drifting Together on Gentle Waves)
+11201	Noya
+11202	Noya (Awakened)
+11203	Noya (Lingering Sunlight)
+11205	Noya (A Moment's Rest by Your Side)
+11301	Shimiao
+11302	Shimiao (Awakened)
+11303	Shimiao (Feeling Spicy? Take the Heat!)
+11401	Chaton
+11402	Chaton (Awakened)
+11501	Firefly
+11502	Firefly (Awakened)
+11601	Ridge
+11602	Ridge (Awakened)
+11603	Ridge (Resting in the Lush Greenhouse)
+11701	Jinglin
+11702	Jinglin (Awakened)
+11703	Jinglin (Feast of Fortune March)
+11801	Coronis
+11802	Coronis (Awakened)
+11901	Nanoha
+11902	Nanoha (Awakened)
+11903	Nanoha (When Distant Winds Rise)
+12001	Canace
+12002	Canace (Awakened)
+12003	Canace (The Formula for Victory)
+12301	Ann
+12302	Ann (Awakened)
+12303	Ann (Princess of the Wondrous Wilds)
+12501	Freesia
+12502	Freesia (Awakened)
+12503	Freesia (The Gift of Falling Snow)
+12601	Flora
+12602	Flora (Awakened)
+12603	Flora (My Stage, My Creation)
+12701	Teresa
+12702	Teresa (Awakened)
+12703	Teresa (Rookie Hero Reporting In)
+13001	Donna
+13002	Donna (Awakened)
+13201	Minova
+13202	Minova (Awakened)
+13203	Minova (Tipsy Daydream)
+13204	Minova (Rippling Void of the Darkest Heartbreak)
+13301	Nazuka
+13302	Nazuka (Awakened)
+13303	Nazuka (A Dip of Fresh Summer)
+13401	Fuyuka
+13402	Fuyuka (Awakened)
+13403	Fuyuka (Probation Period Cleared!)
+13501	Mistique
+13502	Mistique (Awakened)
+13503	Mistique (Cocoa Night Sweetheart)
+13504	Mistique (Carefree in the Golden Glow)
+13701	Eleanor
+13702	Eleanor (Awakened)
+13901	Allie
+13902	Allie (Awakened)
+14001	Sparkla
+14002	Sparkla (Awakened)
+14101	Chixia
+14102	Chixia (Awakened)
+14103	Chixia (Crimson Reflection of Queen of Hearts)
+14201	Cosette
+14202	Cosette (Awakened)
+14203	Cosette (A Taste of Summer All to Herself)
+14301	Wraith
+14302	Wraith (Awakened)
+14303	Wraith (Silver Wind Toward the Blue)
+14401	Chitose
+14402	Chitose (Awakened)
+14403	Chitose (When Morning Glories Bloom, Her Eyes Open)
+14404	Chitose (Always By Your Side)
+14501	Otoha
+14502	Otoha (Awakened)
+14701	Caramel
+14702	Caramel (Awakened)
+14703	Caramel (Mellow Bass Echo)
+14901	Gerie
+14902	Gerie (Awakened)
+14903	Gerie (Promise Beyond the Thaw)
+15001	Laru
+15002	Laru (Awakened)
+15501	Shia
+15502	Shia (Awakened)
+15503	Shia (Call of the Coral Sea)
+15601	Nazuna
+15602	Nazuna (Awakened)
+15603	Nazuna (Quirky Tea Party)
+15701	Karin
+15702	Karin (Awakened)
+15801	Snowish Laru
+15802	Snowish Laru (Awakened)
+15901	Springseek Coronis
+15902	Springseek Coronis (Awakened)
+16001	Suntide Willow
+16002	Suntide Willow (Awakened)
+16101	Leafia
+16102	Leafia (Awakened)
+16201	Firstlight Noya
+16202	Firstlight Noya (Awakened)
+99701	Spellbound Golem (Left Hand)
+99702	Spellbound Golem (Left Hand)
+99801	Spellbound Golem (Right Hand)
+99802	Spellbound Golem (Right Hand)
+99901	Spellbound Golem
+99902	Spellbound Golem
+173174	Virigia & Bernina
+710301	Amber
+711001	Firenze
+711101	Iris
+711201	Noya
+711301	Shimiao
+711701	Jinglin
+712501	Freesia
+713301	Nazuka
+713401	Fuyuka
+713501	Mistique
+713503	Valentine's Day Mistique
+713901	Allie
+714101	Chixia
+714401	Chitose
+714501	Otoha
+715601	Nazuna
+715801	Snowish Laru
+715901	Springseek Coronis
+716001	Suntide Willow
+716201	Firstlight Noya
+811001	Firenze
+811401	Chaton
+811501	Firefly
+813001	Donna
+813301	Nazuka
+813401	Fuyuka
+813701	Eleanor
+813901	Allie
+814001	Sparkla
+814301	Wraith
+814501	Otoha
+815701	Karin
+815801	Snowish Laru
+815901	Springseek Coronis
+816001	Suntide Willow
+816101	Leafia
+816201	Firstlight Noya
+910201	Willow
+910202	Willow
+913101	Bloc
+913301	Portia
+913302	Portia
+913303	Portia
+915201	Bastelina
+915501	Shia
+915901	Horizon
+916402	Iori
+917201	Beatrixa
+917202	Beatrixa
+917203	Beatrixa
+917204	Beatrixa
+917301	Bernina
+917302	Bernina
+917401	Virigia
+917402	Virigia
