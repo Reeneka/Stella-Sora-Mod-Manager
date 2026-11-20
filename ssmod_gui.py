@@ -17,7 +17,7 @@ from PySide6.QtWidgets import (QAbstractItemView, QApplication, QCheckBox, QFile
 import ssmod_core as core
 
 APP_NAME = "Stella Sora Mod Manager"
-DEFAULT_GAME_DIR = r"D:\SteamLibrary\steamapps\common\Stella Sora"
+GAME_DIR_HINT = "Pick the folder that contains StellaSora.exe."
 # Everything lives next to the exe:  <manager>\Mods, <manager>\Backup, <manager>\config.json
 APP_HOME = Path(os.environ.get("SSMM_HOME") or
                 (Path(sys.executable).parent if getattr(sys, "frozen", False) else Path(__file__).parent))
@@ -93,8 +93,7 @@ def load_config() -> dict:
     except Exception:
         cfg["first_run"] = True
     cfg.pop("mod_dir", None)
-    if not cfg["game_dir"]:
-        cfg["game_dir"] = DEFAULT_GAME_DIR
+    cfg["game_dir"] = (cfg.get("game_dir") or "").strip()
     return cfg
 
 
@@ -249,8 +248,11 @@ class MainWindow(QMainWindow):
         self.run_timer.start()
         self.pending_auto = False
 
+        self.game_edit.setPlaceholderText("Not set – click Browse… and pick the folder that contains StellaSora.exe")
         self.log(f"{APP_NAME} started.")
         QTimer.singleShot(100, self.paths_changed)
+        if not self.cfg["game_dir"]:
+            QTimer.singleShot(400, self._ask_game_dir)
 
     # ---------------------------------------------------------------- ui helpers
     def _path_row(self, lay, label, value, browse=True):
@@ -272,6 +274,12 @@ class MainWindow(QMainWindow):
             row.addWidget(b)
         lay.addLayout(row)
         return e
+
+    def _ask_game_dir(self):
+        QMessageBox.information(self, APP_NAME, "Welcome! First, choose your Stella Sora game folder.\n\n"
+                                "Works with both the Steam version and the official launcher version.\n"
+                                + GAME_DIR_HINT)
+        self._browse(self.game_edit)
 
     def _browse(self, edit):
         d = QFileDialog.getExistingDirectory(self, "Choose folder", edit.text())
@@ -322,15 +330,30 @@ class MainWindow(QMainWindow):
     def paths_changed(self):
         if self.busy():
             return
-        mod_dir, game_dir = MOD_DIR, Path(self.game_edit.text().strip())
+        text = self.game_edit.text().strip()
+        mod_dir = MOD_DIR
         mod_dir.mkdir(parents=True, exist_ok=True)
+        if not text:
+            # no game folder chosen yet: don't touch anything until the user picks one
+            self.mgr = None
+            self.cfg.update(game_dir="")
+            save_config(self.cfg)
+            if self.watcher.directories():
+                self.watcher.removePaths(self.watcher.directories())
+            self.table.setRowCount(0)
+            self.rows.clear()
+            self.statuses.clear()
+            self.version_lbl.setText("No game folder")
+            self.log(f"Choose your Stella Sora game folder with 'Browse…' (Steam or the official launcher). {GAME_DIR_HINT}")
+            return
+        game_dir = Path(text)
         self.cfg.update(game_dir=str(game_dir))
         save_config(self.cfg)
         self.mgr = core.Manager(mod_dir, game_dir, log=lambda m: self.worker.log.emit(m) if self.worker else self.log(m),
                                 backup_dir=BACKUP_DIR)
         if not self.mgr.game.valid():
             self.version_lbl.setText("Game folder not found")
-            self.log("⚠ The game folder doesn't look right – choose the 'Stella Sora' folder inside steamapps\\common.")
+            self.log(f"⚠ The game folder doesn't look right. {GAME_DIR_HINT}")
         else:
             self.version_lbl.setText(self.mgr.game.version_text)
         if not mod_dir.exists():
@@ -355,6 +378,8 @@ class MainWindow(QMainWindow):
             self.debounce.start()
 
     def on_fs_settled(self):
+        if not self.mgr:
+            return
         if self.busy():
             self.debounce.start()
             return

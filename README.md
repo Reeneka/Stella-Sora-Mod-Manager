@@ -17,7 +17,7 @@
 
 1. Download `StellaSoraModManager.exe` from the Releases page.
 2. Put it in its own folder and run it.
-3. Set your Stella Sora game folder in the app (use the Browse button).
+3. On first start, pick your Stella Sora game folder (the one that contains `StellaSora.exe`). Both the Steam version and the official launcher version work. You can change it later with the Browse button.
 
 The app creates these next to the exe:
 
