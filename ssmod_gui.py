@@ -17,6 +17,7 @@ from PySide6.QtWidgets import (QAbstractItemView, QApplication, QCheckBox, QFile
 import ssmod_core as core
 
 APP_NAME = "Stella Sora Mod Manager"
+APP_VERSION = "1.0"
 GAME_DIR_HINT = "Pick the folder that contains StellaSora.exe."
 # Everything lives next to the exe:  <manager>\Mods, <manager>\Backup, <manager>\config.json
 APP_HOME = Path(os.environ.get("SSMM_HOME") or
@@ -135,7 +136,7 @@ class MainWindow(QMainWindow):
         self.statuses: dict[str, core.ModStatus] = {}
         self.last_sizes: dict[str, int] = {}
 
-        self.setWindowTitle(APP_NAME)
+        self.setWindowTitle(f"{APP_NAME} v{APP_VERSION}")
         self.resize(1080, 720)
         if Path(resource("icon.ico")).exists():
             self.setWindowIcon(QIcon(resource("icon.ico")))
